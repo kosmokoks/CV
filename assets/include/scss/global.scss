@@ -1,3 +1,119 @@
 body {
-    padding-top: 5rem;
+    font-family: 'Montserrat', sans-serif;
+    background: #f3f3f3;
+}
+
+main {
+    background: #fff;
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+    padding: 0 50px;
+    .top-part {
+        h1 {
+            padding: 40px 0;
+            color: #000;
+            font-weight: 600;
+            border-bottom: 1px solid #000;
+            margin: 0;
+        }
+    }
+    .main-part {
+        display: flex;
+        .left-column {
+            width: 35%;
+            border-right: 1px solid #000;
+            padding-right: 25px;
+            .info-box {
+                & > div {
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    .title {
+                        text-transform: uppercase;
+                        color: #000;
+                        letter-spacing: 1px;
+                        font-weight: 600;
+                    }
+                    .value {
+                        color: #6b6b6b;
+                        font-weight: 500;
+                    }
+                }
+            }
+            .skills{
+                margin-top: 30px;
+                div{
+                    text-transform: uppercase;
+                    color: #000;
+                    letter-spacing: 1px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .right-column {
+            width: 65%;
+            padding-left: 25px;
+            .projects{
+                margin-bottom: 60px;
+                h2{
+                    margin-bottom: 30px;
+                }
+            }
+           .education{
+               border-top: 1px solid #000;
+               h2{
+                   margin-bottom: 30px;
+               }
+               h3{
+                   position: relative;
+                   &:after{
+                       content: "Kraków";
+                       position: absolute;
+                       right: 0;
+                       top: 50%;
+                       transform: translateY(-50%);
+                       font-size: 14px;
+                   }
+               }
+           }
+        }
+    }
+}
+
+h2 {
+    padding-top: 25px;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    position: relative;
+    margin-bottom: 25px;
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: -12px;
+        left: 0;
+        width: 40px;
+        height: 6px;
+        background: #000;
+    }
+}
+.section{
+    margin-bottom: 30px;
+    h3{
+        margin: 0;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .date{
+        font-size: 12px;
+        color: #6b6b6b;
+        margin: 5px 0;
+    }
+    .description{
+        font-size: 14px;
+    }
 }
