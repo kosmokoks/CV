@@ -86,7 +86,9 @@ main {
     font-size: 10px;
     position: absolute;
     bottom: 20px;
-    right: 67px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
 }
 
 

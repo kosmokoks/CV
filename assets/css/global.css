@@ -101,7 +101,10 @@ main .main-part .right-column .education h3:after {
   font-size: 10px;
   position: absolute;
   bottom: 20px;
-  right: 67px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  white-space: nowrap;
 }
 
 h2 {
